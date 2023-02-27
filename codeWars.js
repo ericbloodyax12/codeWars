@@ -11,7 +11,6 @@ function removeExclamationMarks(s) {
     }
     return newString;
 }
-console.log(removeExclamationMarks(s));
 //endregion
 //#region Square(n) Sum
 numbers = [1,2,3,4]
@@ -26,3 +25,12 @@ function squareSum(numbers){
     return sum;
 }
 //endregion Square(n) Sum
+
+// region Add Length
+//todo"apple ban" --> ["apple 5", "ban 3"]
+let str = "apple ban"
+function addLength(str) {
+    return str.split(" ").map((s)=>s+" "+s.length)
+}
+
+// endregion Add Length
