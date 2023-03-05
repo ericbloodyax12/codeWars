@@ -34,3 +34,23 @@ function addLength(str) {
 }
 
 // endregion Add Length
+
+//#region Geometry Basics: Distance between points in 2D
+function distanceBetweenPoints(a, b) {
+    const pointOne = a;
+    const pointTwo = b;
+
+    class Point {
+        constructor(x, y) {
+            this.x = x;
+            this.y = y;
+        }
+    }
+
+    const differenceX = pointTwo.x - pointOne.x
+    const differenceY = pointTwo.y - pointOne.y
+    const tempSum = Math.pow(differenceX, 2) +  Math.pow(differenceY, 2);
+    const distance = Math.sqrt(tempSum);
+    return distance;
+}
+//#endregion Geometry Basics: Distance between points in 2D
